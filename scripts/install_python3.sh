@@ -16,22 +16,16 @@ elif [ -f /etc/redhat-release ]; then
     yum -y groupinstall "Development tools"
     yum -y install openssl-devel wget
 
-    if  [ ! -f /usr/local/bin/python2.7 ]; then
-        wget --no-check-certificate https://www.python.org/ftp/python/2.7.6/Python-2.7.6.tar.xz
-        tar xf Python-2.7.6.tar.xz
-        cd Python-2.7.6
-        ./configure --prefix=/usr/local
-        make && make install
+    if  [ ! -f /usr/bin/python3 ]; then
+        yum install -y python3
     fi
 
     if  [ ! -f /usr/local/bin/pip2.7 ]; then
         #install pip
-        wget https://bootstrap.pypa.io/ez_setup.py
-        /usr/local/bin/python2.7 ./ez_setup.py install
-        /usr/local/bin/easy_install-2.7 pip
+        yum install -y python3-pip
 
         #install virtualenv
-        /usr/local/bin/pip2.7 install virtualenv
+        pip install virtualenv
     fi
 
 else

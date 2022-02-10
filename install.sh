@@ -49,9 +49,9 @@ if [ -f /etc/redhat-release ]; then
     WWW_OWNER="nginx"
     ./install_sqlite.sh
 
-    if [ ! -f /usr/local/bin/python2.7 ]; then
-        echo "[`date`] Installing Python2.7 as a pre-req"
-       ./install_python2.7.sh
+    if [ ! -f /usr/local/bin/python3 ]; then
+        echo "[`date`] Installing Python3 as a pre-req"
+       ./install_python3.sh
     fi
 
      ./install_supervisord.sh
