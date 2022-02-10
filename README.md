@@ -1,5 +1,5 @@
 Modern Honey Network
-
+/!\Upgrade to Python 3 in progress /!\
 [![Centos 6](https://github.com/pwnlandia/mhn/actions/workflows/centos6.yml/badge.svg)](https://github.com/pwnlandia/mhn/actions/workflows/centos6.yml)
 [![Ubuntu 16.04](https://github.com/pwnlandia/mhn/actions/workflows/ubuntu1604.yml/badge.svg)](https://github.com/pwnlandia/mhn/actions/workflows/ubuntu1604.yml)
 [![Ubuntu 18.04](https://github.com/pwnlandia/mhn/actions/workflows/ubuntu1804.yml/badge.svg)](https://github.com/pwnlandia/mhn/actions/workflows/ubuntu1804.yml)
